@@ -4,18 +4,18 @@ A neighborhood marketplace for Dhaka: **good finds, close by**. Prices are in BD
 
 Milestone 1 implements the visitor-local demo. No Supabase project, environment variables, signup, or API key is needed. Live authentication, shared listings, and real messaging belong to later milestones.
 
-![Desktop demo](docs/screenshots/explore-desktop.png)
+<!-- ![Desktop demo](docs/screenshots/explore-desktop.png) -->
 
 ## App showcase
 
 Mobile views in dark mode, from browsing nearby finds to publishing a listing in the local demo.
 
-| Explore nearby listings | View item details | Create a listing |
-| --- | --- | --- |
+| Explore nearby listings                                                                                                                         | View item details                                                                                                                                       | Create a listing                                                                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="app_photos/Screenshot%202026-11-17%20215531.png" alt="Explore screen with search, category filters, and nearby listings" width="250"> | <img src="app_photos/Screenshot%202026-11-17%20215203.png" alt="Reading chair listing with photo, price, neighborhood, and seller actions" width="250"> | <img src="app_photos/Screenshot%202026-11-17%20215257.png" alt="Sell form for entering a listing title, description, and category" width="250"> |
 
-| Add photos | Set price and neighborhood | Published local listing |
-| --- | --- | --- |
+| Add photos                                                                                                                                   | Set price and neighborhood                                                                                                                           | Published local listing                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="app_photos/Screenshot%202026-11-17%20214829.png" alt="Photo step with an uploaded image and photo selection controls" width="250"> | <img src="app_photos/Screenshot%202026-11-17%20215426.png" alt="Price and place step with a price field and Dhaka neighborhood choices" width="250"> | <img src="app_photos/Screenshot%202026-11-17%20215453.png" alt="Published free listing with an uploaded photo and device-only notice" width="250"> |
 
 ## Run it
@@ -99,23 +99,23 @@ See [Milestone 1 verification](docs/milestone-1.md) for actual results, manual c
 
 ## Feature matrix
 
-| Capability | Current implementation | Live/native status |
-| --- | --- | --- |
-| Welcome, five destinations, responsive grid | Working local demo | Android/iOS runtime unverified |
-| Search, filters, sorting, pagination, detail | Local dataset, English and Bangla | Remote adapter planned |
-| Save/unsave and rollback | Persistent local mutation | Supabase writes planned |
-| Sell, edit, mark sold, delete | Visitor-owned local listings | Shared ownership/RLS planned |
-| Draft restore | IndexedDB on web; native file implementation | Native restart unverified |
-| Photos | Bundled photos; browser picker, compression and blob persistence | Native gallery/camera and upload progress/retry planned in milestone 2 |
-| Chat and unread counts | Simulated replies, paginated history, pending/sent/failed, duplicate-safe retries | Supabase realtime planned in milestone 3 |
-| Notification center | Simulated events, unread indicator | Server events and optional native push planned |
-| Profile and avatar | Local editable profile; browser avatar picker | Auth and session lifecycle planned in milestone 2 |
-| Theme/language | Persisted preferences, bilingual fixtures and UI | Device font/screen-reader review pending |
-| Offline | Already-open web demo can read/write locally; drafts persist | Cold-start web offline loading and live cache policy planned in milestone 4 |
-| Location | Manual neighborhood selection; no coordinates stored | Optional location suggestion planned |
-| Sharing | Fixture deep links, clipboard/native share path | Native link handlers unverified; local creations are not transferable |
-| Backend and security | No backend in this milestone | Migrations, seeds, RLS, storage policies and auth planned |
-| Deployment | Vercel configuration included | No public deployment performed |
+| Capability                                   | Current implementation                                                            | Live/native status                                                          |
+| -------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Welcome, five destinations, responsive grid  | Working local demo                                                                | Android/iOS runtime unverified                                              |
+| Search, filters, sorting, pagination, detail | Local dataset, English and Bangla                                                 | Remote adapter planned                                                      |
+| Save/unsave and rollback                     | Persistent local mutation                                                         | Supabase writes planned                                                     |
+| Sell, edit, mark sold, delete                | Visitor-owned local listings                                                      | Shared ownership/RLS planned                                                |
+| Draft restore                                | IndexedDB on web; native file implementation                                      | Native restart unverified                                                   |
+| Photos                                       | Bundled photos; browser picker, compression and blob persistence                  | Native gallery/camera and upload progress/retry planned in milestone 2      |
+| Chat and unread counts                       | Simulated replies, paginated history, pending/sent/failed, duplicate-safe retries | Supabase realtime planned in milestone 3                                    |
+| Notification center                          | Simulated events, unread indicator                                                | Server events and optional native push planned                              |
+| Profile and avatar                           | Local editable profile; browser avatar picker                                     | Auth and session lifecycle planned in milestone 2                           |
+| Theme/language                               | Persisted preferences, bilingual fixtures and UI                                  | Device font/screen-reader review pending                                    |
+| Offline                                      | Already-open web demo can read/write locally; drafts persist                      | Cold-start web offline loading and live cache policy planned in milestone 4 |
+| Location                                     | Manual neighborhood selection; no coordinates stored                              | Optional location suggestion planned                                        |
+| Sharing                                      | Fixture deep links, clipboard/native share path                                   | Native link handlers unverified; local creations are not transferable       |
+| Backend and security                         | No backend in this milestone                                                      | Migrations, seeds, RLS, storage policies and auth planned                   |
+| Deployment                                   | Vercel configuration included                                                     | No public deployment performed                                              |
 
 ## Known limits
 
