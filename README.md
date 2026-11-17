@@ -117,6 +117,7 @@ See [Milestone 1 verification](docs/milestone-1.md) for actual results, manual c
 | Backend and security                         | No backend in this milestone                                                      | Migrations, seeds, RLS, storage policies and auth planned                   |
 | Deployment                                   | Vercel configuration included                                                     | No public deployment performed                                              |
 
+<!--
 ## Known limits
 
 - Native gallery/camera, haptics, location, push, and live offline caching are not implemented yet. Use bundled photos to exercise the native demo flow once device testing is available. A native development build and platform-specific permission configuration will be needed for the later native integrations; browser tests do not establish native support.
@@ -139,4 +140,4 @@ For Vercel, import this repository, select Node 24, and use the included `vercel
 - [Dark-mode screenshot](docs/screenshots/explore-dark.png)
 - Interview topics: adapter boundaries, local persistence, deterministic demo design, cache ownership, optimistic rollback under concurrency, idempotent retries, draft lifecycle, platform-specific media, accessible responsive React Native Web, and honest verification boundaries.
 
-The next review checkpoint is Milestone 2: authentication, database, storage, and listing ownership.
+The next review checkpoint is Milestone 2: authentication, database, storage, and listing ownership. -->
